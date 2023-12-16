@@ -1,0 +1,29 @@
+.calendar {
+  padding: 55px 95px 0px 95px;
+  color: #959494;
+  font-family: 'Inter';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.months {
+  display: flex;
+  justify-content: space-between;
+}
+
+.daysAndWeek {
+  display: flex;
+  margin: 5px;
+}
+
+.days-week {
+  margin-right: 5px;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}

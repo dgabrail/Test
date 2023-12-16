@@ -1,0 +1,46 @@
+.Vector {
+  color: #7C7C7C;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  background: #EDEDED;
+}
+
+.Vector-nine {
+  background: #ACD5F2;
+}
+
+.Vector-nineteen {
+  background: #7FA8C9;
+}
+
+.Vector-twenty-nine {
+  background: #527BA0;
+}
+
+.Vector-thirti {
+  background: #254E77;
+}
+
+.dropdown-window {
+  padding-top: 5px;
+  width: 150px;
+  height: 42px;
+  display: none;
+  position: relative;
+  border-radius: 3px;
+  background: black;
+  bottom: 50px;
+  right: 50px;
+}
+
+.Vector:hover .dropdown-window {
+  display: block;
+}
+
+.contributions {
+  color: #fff;
+  margin-bottom: 4px;
+  font-size: 12px;
+}

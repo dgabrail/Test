@@ -1,24 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import FrameOne from './components/FrameOne/FrameOne';
+import { DayType } from './types';
+
+const URL = 'https://dpg.gg/test/calendar.json'
 
 function App() {
+
+  const [Days, setDays] = useState<DayType[]>([]);
+
+  const run = async () => {
+    const ResponseDays: DayType[] = []
+    const daysObject = await fetch(URL);
+    const response = await daysObject.json();
+
+    for (let key in response) {
+      const day: DayType = {
+        date: key,
+        contribution: response[key],
+        style: 'Vector',
+      }
+      ResponseDays.push(day)
+    }
+
+    setDays(ResponseDays)
+
+  }
+
+  useEffect(() => {
+    run()
+  }, []);
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FrameOne days={Days} />
     </div>
   );
 }
