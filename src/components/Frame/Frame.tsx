@@ -2,7 +2,6 @@ import React from 'react'
 import './Frame.css'
 import { DayType } from '../../types';
 import Weeks from '../Weeks/Weeks';
-import '../Day/Day.css';
 
 interface Props {
   days: DayType[];
