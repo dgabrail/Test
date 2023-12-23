@@ -9,7 +9,7 @@ const Weeks: React.FC<Props> = (week) => {
   return (
     <div>
       {week.week.map((day, index) =>
-        (<Day key={index} index={index} date={day.date} contribution={day.contribution} style={day.style} />)
+        (<Day weekDay={day.weekDay} key={index} index={index} date={day.date} contribution={day.contribution} style={day.style} />)
       )}
     </div>
   )

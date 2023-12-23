@@ -6,12 +6,12 @@ interface Props {
   style: string
   date: string
   index: number
+  weekDay: string
 }
 
 
-const Day: React.FC<Props> = ({ contribution, style, date, index }) => {
+const Day: React.FC<Props> = ({ contribution, style, date, index , weekDay}) => {
 
-  let weekDay = ''
   if (index === 0) {
     weekDay = 'Понедельник'
   } else if (index === 1) {

@@ -24,14 +24,14 @@
 }
 
 .dropdown-window {
-  padding-top: 5px;
-  width: 150px;
+  padding: 5px 0 5px 0;
+  width: 155px;
   height: 42px;
   display: none;
   position: relative;
   border-radius: 3px;
   background: black;
-  bottom: 50px;
+  bottom: 60px;
   right: 50px;
 }
 

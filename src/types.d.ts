@@ -1,5 +1,13 @@
 export interface DayType {
-  date: string;
+  date: string 
   contribution: number,
-  style: string
+  style: string,
+  weekDay: '',
 }
+
+
+
+
+
+
+

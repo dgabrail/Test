@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import FrameOne from './components/FrameOne/FrameOne';
+import Frame from './components/Frame/Frame';
 import { DayType } from './types';
 
 const URL = 'https://dpg.gg/test/calendar.json'
@@ -19,6 +19,7 @@ function App() {
         date: key,
         contribution: response[key],
         style: 'Vector',
+        weekDay: '',
       }
       ResponseDays.push(day)
     }
@@ -35,7 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      <FrameOne days={Days} />
+      <Frame setDays={setDays} days={Days} />
     </div>
   );
 }

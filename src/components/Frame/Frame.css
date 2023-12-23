@@ -1,4 +1,6 @@
 .calendar {
+  display: flex;
+  justify-content: center;
   padding: 55px 95px 0px 95px;
   color: #959494;
   font-family: 'Inter';
@@ -7,23 +9,36 @@
   line-height: normal;
 }
 
-.months {
+.colors {
   display: flex;
-  justify-content: space-between;
+  margin-top: 15px;
 }
 
-.daysAndWeek {
+.colorsCub {
+  margin: 0px 15px 0px 15px;
   display: flex;
-  margin: 5px;
+}
+
+
+.colors span {
+  font-size: 8px;
+}
+
+.months {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .days-week {
   margin-right: 5px;
 }
 
+.days-week div {
+  margin: 15px 0 20px 0;
+}
+
 .days {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
 }
